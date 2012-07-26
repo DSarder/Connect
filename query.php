@@ -5,7 +5,8 @@ $query = "SELECT * FROM wine";
 echo "<html><head><title>Wines</title></head>\n>";
 
 // 1. Open database connection
-$dbconn = mysql_connect('yallara.cs.rmit.edu.au:54045', winestore, pwinny12);
+$dbconn = mysql_connect('yallara.cs.rmit.edu.au:54045', 'winestore', 'pwinny12');
+mysql_select_db("winestore", $dbconn);
 
 //2. Run the query through connection
 $result = mysql_query($query, $dbconn);

@@ -1,5 +1,5 @@
 <?php
-$query = "SELECT * FROM wine";
+$query = "show columns from wine";
 
 //produce HTML headers
 echo "<html><head><title>Wines</title></head>\n>";
